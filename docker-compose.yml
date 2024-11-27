@@ -1,0 +1,12 @@
+
+services:
+  app:
+    container_name: app
+    image: app
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    ports:
+      - "${PORT}:${PORT}"
