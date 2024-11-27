@@ -1,12 +1,11 @@
-
 services:
-  app:
-    container_name: app
-    image: app
+  servidor:
+    container_name: container_goodbye
+    image: goodbye
     restart: always
     build:
       context: .
-      dockerfile: Dockerfile
-      target: base
+      dockerfile: elizabeth/Dockerfile
+      target: baseOfLi
     ports:
       - "${PORT}:${PORT}"

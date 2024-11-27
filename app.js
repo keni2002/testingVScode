@@ -4,10 +4,14 @@ const hostname = "127.0.0.1";
 const port = 3000;
 
 app.get("/", (req, res)=>{
-    res.send("GoodBye world");
+    res.json(
+        {
+            message: "cruel world",
+            greeting: "good bye"
+        }
+    );
 });
 
 app.listen(port, ()=>{
     console.log(`Server running at http://${hostname}:${port}/`);
-
 });
