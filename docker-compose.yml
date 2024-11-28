@@ -5,7 +5,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: elizabeth/Dockerfile
+      dockerfile: Dockerfile
       target: baseOfLi
     ports:
       - "${PORT}:${PORT}"
